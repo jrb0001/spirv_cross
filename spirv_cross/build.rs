@@ -22,7 +22,7 @@ fn main() {
     if is_apple && (is_clang || is_ios) {
         build.flag("-std=c++14").cpp_set_stdlib("c++");
     } else {
-        build.flag_if_supported("-std=c++14");
+        build.flag_if_supported("-std=gnu++14");
     }
 
     build
